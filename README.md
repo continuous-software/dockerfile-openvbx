@@ -7,3 +7,9 @@
     $ docker run -d -p 80:80 continuoushq/openvbx
 
 ![OpenVBX Setup Screen](http://s10.postimg.org/bn5n0j2uh/Install_Open_VBX.png)
+
+## Configuration
+
+For configuration of the LAMP stack, refer to [tutumcloud/lamp](https://github.com/tutumcloud/lamp).  
+Default SQL credential is **root** with empty password.  
+Required database **OpenVBX** is already created.  
