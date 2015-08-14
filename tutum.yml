@@ -1,0 +1,4 @@
+openvbx:
+  image: continuoushq/openvbx
+  ports:
+    - "80:80"
