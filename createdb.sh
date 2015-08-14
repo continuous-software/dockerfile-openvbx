@@ -9,19 +9,19 @@ else
         sleep 1
     done
     echo '[createdb.sh] MySQL started.'
-    DB_EXISTS=$(mysql -u root -h localhost -e "SHOW DATABASES LIKE 'openvbx';" | grep "openvbx" > /dev/null; echo "$?")
+    DB_EXISTS=$(mysql -u root -h localhost -e "SHOW DATABASES LIKE 'OpenVBX';" | grep "OpenVBX" > /dev/null; echo "$?")
     if [[ DB_EXISTS -eq 1 ]];
     then
-        echo "[createdb.sh] Creating database openvbx..."
+        echo "[createdb.sh] Creating database 'OpenVBX'..."
         RET=1
         while [[ RET -ne 0 ]]; do
             sleep 5
-            mysql -u root -h localhost -e "CREATE DATABASE openvbx"
+            mysql -u root -h localhost -e "CREATE DATABASE OpenVBX"
             RET=$?
         done
         echo "[createdb.sh] Done!"
     else
-        echo "[createdb.sh] Skipped creation of database openvbx – it already exists."
+        echo "[createdb.sh] Skipped creation of database 'OpenVBX' – it already exists."
     fi
     touch /.mysql_db_created
 fi
