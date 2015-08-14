@@ -6,6 +6,4 @@
 
     $ docker run -d -p 80:80 continuoushq/openvbx
 
-Open your browser on [localhost](http://localhost) (or deploy destination) to see OpenVBX setup screen:
-
 ![OpenVBX Setup Screen](http://s10.postimg.org/bn5n0j2uh/Install_Open_VBX.png)
