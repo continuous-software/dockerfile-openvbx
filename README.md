@@ -12,4 +12,4 @@
 
 For configuration of the LAMP stack, refer to [tutumcloud/lamp](https://github.com/tutumcloud/lamp).  
 Default SQL credential is **root** with empty password.  
-Required database **OpenVBX** is already created.  
+Required database **openvbx** is already created.  
